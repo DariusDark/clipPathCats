@@ -1,0 +1,142 @@
+:root {
+  --colorGrey: #666666;
+  --colorBlue: #2ea8e6;
+  --colorWhite: #ffffff;
+}
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  list-style: none;
+  outline: none;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1;
+  font-family: "Trebuchet MS", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.scene {
+  padding: 20px 0px 35px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 5e-5) 49.88%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../assets/pattern.svg");
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.body__background {
+  border-radius: 12px;
+  position: relative;
+  height: 480px;
+  width: 320px;
+  background: var(--colorBlue);
+  clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+  margin-bottom: 15px;
+}
+
+.body__container {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  top: 4px;
+  border-radius: 9px;
+  clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+  background: var(--colorWhite) url("../assets/card/cat.png") -5px bottom/auto no-repeat;
+  padding: 17px 48px;
+}
+
+.body__label {
+  line-height: 1.1rem;
+  display: block;
+  color: var(--colorGrey);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.body__title {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.body__title-text {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.body__title-subtext {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.body__bonus {
+  font-size: 0.875rem;
+  color: var(--colorGrey);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.body__bonus-options--bold {
+  font-weight: 700;
+}
+
+.body__weight {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  height: 80px;
+  aspect-ratio: 1;
+  background: var(--colorBlue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--colorWhite);
+  font-size: 1.4rem;
+}
+
+.body_weight-text:first-child {
+  font-size: 2.5rem;
+}
+
+.body__action {
+  color: var(--colorWhite);
+  font-size: 0.813rem;
+  text-align: center;
+}
+
+.body__action-link {
+  color: var(--colorBlue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--colorBlue);
+  border-style: dashed;
+}
